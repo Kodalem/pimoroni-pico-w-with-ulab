@@ -8,37 +8,37 @@ include(bitmap_fonts/micropython)
 include(picographics/micropython)
 
 # Pico Graphics Extra
-include(pngdec/micropython)
-include(jpegdec/micropython)
+#include(pngdec/micropython)
+#include(jpegdec/micropython)
 include(picovector/micropython)
-include(qrcode/micropython/micropython)
+#include(qrcode/micropython/micropython)
 
 # Sensors & Breakouts
 include(micropython-common-breakouts)
 
 # Packs & Bases
-include(pico_unicorn/micropython)
-include(pico_scroll/micropython)
-include(pico_rgb_keypad/micropython)
+#include(pico_unicorn/micropython)
+#include(pico_scroll/micropython)
+#include(pico_rgb_keypad/micropython)
 include(pico_explorer/micropython)
 
 # LEDs & Matrices
-include(plasma/micropython)
-include(hub75/micropython)
+#include(plasma/micropython)
+#include(hub75/micropython)
 
 # Servos & Motors
-include(pwm/micropython)
-include(servo/micropython)
-include(encoder/micropython)
-include(motor/micropython)
+#include(pwm/micropython)
+#include(servo/micropython)
+#include(encoder/micropython)
+#include(motor/micropython)
 
 # Utility
 include(adcfft/micropython)
 
 # RTC (Badger 2040W, Enviro)
-if(PICO_BOARD STREQUAL "pico_w")
-    include(pcf85063a/micropython)
-endif()
+#if(PICO_BOARD STREQUAL "pico_w")
+#    include(pcf85063a/micropython)
+#endif()
 
 include(modules_py/modules_py)
 
