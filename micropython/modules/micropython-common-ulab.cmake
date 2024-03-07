@@ -3,11 +3,11 @@ function(enable_ulab)
 
     target_compile_definitions(usermod_ulab INTERFACE
         # Support for complex ndarrays
-        ULAB_SUPPORTS_COMPLEX=0
+        ULAB_SUPPORTS_COMPLEX=1
 
         # Determines, whether scipy is defined in ulab. The sub-modules and functions
         # of scipy have to be defined separately
-        ULAB_HAS_SCIPY=0
+        ULAB_HAS_SCIPY=1
 
         # The maximum number of dimensions the firmware should be able to support
         # Possible values lie between 1, and 4, inclusive
